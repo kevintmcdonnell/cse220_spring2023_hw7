@@ -20,7 +20,7 @@ int run_with_valgrind(char *test_name) {
     return system(cmd);
 #else
     cr_log_warn("Skipping valgrind tests. Run tests on Linux or GitHub for full output.\n");
-    return 0
+    return 0;
 #endif
 }
 
@@ -36,7 +36,7 @@ int run_script_with_valgrind(char *script_file) {
     return system(cmd);
 #else
     cr_log_warn("Skipping valgrind tests. Run tests on Linux or GitHub for full output.\n");
-    return 0
+    return 0;
 #endif
 }
 
